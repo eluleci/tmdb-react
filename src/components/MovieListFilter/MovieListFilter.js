@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import { setGenreFilter, setRatingFilter } from '../../actions/ui';
 import { getAvailableGenreIdsFromMovies } from '../../utils/FilterUtils';
-import Tag from '../Tag';
 import './MovieListFilter.css';
 
 /**
@@ -49,10 +48,9 @@ class MovieListFilter extends Component {
         <div className="genre-filter">
           <h3>Filter by genre</h3>
           {availableGenreIds.map(genreId =>
-            (<div className="checkbox-container">
+            (<div className="checkbox-container" key={genreId}>
               <input
                 type="checkbox"
-                key={genreId}
                 id={genreId}
                 name={genreId}
                 value={genreId}
