@@ -1,0 +1,23 @@
+@import '../../styles/_colors.scss';
+
+.tag {
+  display: inline-block;
+  border: 1px solid $gray500;
+  background-color: $white;
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin: 2px 2px;
+  color: $gray700;
+  font-weight: bold;
+  font-size: 0.8em;
+
+  &.selectable {
+    cursor: pointer;
+  }
+
+  &.highlighted {
+    background-color: $green;
+    border: 1px solid $green;
+    color: $white;
+  }
+}

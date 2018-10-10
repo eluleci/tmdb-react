@@ -23,3 +23,5 @@ Run `npm test` or `yarn test` to run the test watcher in an interactive mode.
 This project is created with [Create React App](https://github.com/facebook/create-react-app) and the features below are added on top of it.
 
 **[Sass](https://sass-lang.com)**: A CSS extension that adds new features on top of CSS such as variables and nested CSS classes.
+
+**[Redux](https://redux.js.org):** Redux is a predictable state container for JavaScript apps. Helps to manage and share the application state through all components.

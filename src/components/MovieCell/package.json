@@ -1,0 +1,6 @@
+{
+  "name": "movie-cell",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./MovieCell.js"
+}

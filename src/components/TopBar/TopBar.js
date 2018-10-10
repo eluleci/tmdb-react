@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './TopBar.css';
 
+/**
+ * Displays the top bar of application. Forwards the user to '/' (reloads the page) when title is clicked.
+ */
 class TopBar extends Component {
 
   render() {
