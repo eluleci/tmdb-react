@@ -1,0 +1,19 @@
+@import '../../styles/_metrics.scss';
+@import '../../styles/_colors.scss';
+
+.top-bar {
+  height: $top-bar-height;
+  background-color: $blue;
+
+  .bar {
+    display: flex;
+    color: white;
+    align-items: center;
+    height: $top-bar-height;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
