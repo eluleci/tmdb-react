@@ -47,7 +47,7 @@ class MovieListFilter extends Component {
       <div className="movie-list-filter">
 
         <div className="genre-filter">
-          <h3>Filter by gender</h3>
+          <h3>Filter by genre</h3>
           {availableGenreIds.map(genreId =>
             (<div className="checkbox-container">
               <input
