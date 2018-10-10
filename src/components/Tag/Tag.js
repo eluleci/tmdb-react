@@ -4,45 +4,12 @@ import PropTypes from 'prop-types';
 import './Tag.css';
 
 /**
- * Displays a tag UI. Acts like a Checkbox if 'onToggle' and 'highlighted' props are provided.
+ * Displays a tag UI.
  */
-class Tag extends React.Component {
+const Tag = ({ text }) => (<div className="tag">{text}</div>);
 
-  static propTypes = {
-    text: PropTypes.string.isRequired,
-    onToggle: PropTypes.func,
-    highlighted: PropTypes.bool,
-  }
-
-  static defaultProps = {
-    onToggle: undefined,
-    highlighted: false,
-  }
-
-  render() {
-    const { onToggle, highlighted, text } = this.props;
-    const classNames = ['tag'];
-
-    // add extra classes for css
-    if (onToggle) {
-      classNames.push('selectable');
-
-      if (highlighted) {
-        classNames.push('highlighted');
-      }
-    }
-
-    return (
-      <div
-        className={classNames.join(' ')}
-        onClick={() => {
-          onToggle && onToggle()
-        }}
-      >
-        {text}
-      </div>
-    )
-  }
+Tag.propTypes = {
+  text: PropTypes.string.isRequired,
 }
 
 export default Tag;

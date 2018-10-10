@@ -48,11 +48,19 @@ class MovieListFilter extends Component {
 
         <div className="genre-filter">
           <h3>Filter by gender</h3>
-          {availableGenreIds.map(genreId => <Tag
-            key={genreId}
-            text={genres[genreId].name}
-            highlighted={genreFilter.indexOf(genreId) > -1}
-            onToggle={() => this.onToggleGenre(genreId)} />
+          {availableGenreIds.map(genreId =>
+            (<div className="checkbox-container">
+              <input
+                type="checkbox"
+                key={genreId}
+                id={genreId}
+                name={genreId}
+                value={genreId}
+                checked={genreFilter.indexOf(genreId) > -1}
+                onChange={() => this.onToggleGenre(genreId)}
+              />
+              <label htmlFor={genreId}>{genres[genreId].name}</label>
+            </div>)
           )}
         </div>
 

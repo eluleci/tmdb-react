@@ -10,14 +10,4 @@
   color: $gray700;
   font-weight: bold;
   font-size: 0.8em;
-
-  &.selectable {
-    cursor: pointer;
-  }
-
-  &.highlighted {
-    background-color: $green;
-    border: 1px solid $green;
-    color: $white;
-  }
 }
