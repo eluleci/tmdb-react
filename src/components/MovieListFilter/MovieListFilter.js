@@ -9,7 +9,7 @@ import './MovieListFilter.css';
 /**
  * Displays and updates the movie genre and rating filters.
  */
-class MovieListFilter extends Component {
+export class MovieListFilter extends Component {
 
   static propTypes = {
     availableGenreIds: PropTypes.arrayOf(PropTypes.number),
@@ -45,7 +45,7 @@ class MovieListFilter extends Component {
     return (
       <div className="movie-list-filter">
 
-        <div className="genre-filter">
+        <div className="filter-container">
           <h3>Filter by genre</h3>
           {availableGenreIds.map(genreId =>
             (<div className="checkbox-container" key={genreId}>
@@ -62,7 +62,7 @@ class MovieListFilter extends Component {
           )}
         </div>
 
-        <div className="genre-filter">
+        <div className="filter-container">
           <h3>Filter by rating</h3>
           <input
             value={movieFilter.rating}

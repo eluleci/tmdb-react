@@ -25,3 +25,7 @@ This project is created with [Create React App](https://github.com/facebook/crea
 **[Sass](https://sass-lang.com)**: A CSS extension that adds new features on top of CSS such as variables and nested CSS classes.
 
 **[Redux](https://redux.js.org):** Redux is a predictable state container for JavaScript apps. Helps to manage and share the application state through all components.
+
+### Test dependencies
+
+Create React App contains **[Jest](https://jestjs.io)** by default. On top of jest, **[Enzyme](https://airbnb.io/enzyme)** is added to be able to test the React Components easier.

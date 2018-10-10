@@ -11,7 +11,7 @@ import MovieListFilter from '../MovieListFilter'
 /**
  * Shows the movie filter and the list. Loads the genres and the movie list.
  */
-class MovieList extends Component {
+export class MovieList extends Component {
 
   static propTypes = {
     error: PropTypes.instanceOf(ApiError),
@@ -57,19 +57,19 @@ class MovieList extends Component {
     return (
       <div className="container">
         {isPending &&
-        <div className="text-center with-padding">
+        <div className="progress text-center with-padding">
           Loading ...
         </div>
         }
 
         {error &&
-        <div className="text-center text-error with-padding">
+        <div className="error text-center text-error with-padding">
           Movie list couldn't be fetched.
         </div>
         }
 
         {genres && movies &&
-        <div className="row ">
+        <div className="row">
           <div className="col-sm-12">
             <MovieListFilter />
           </div>
